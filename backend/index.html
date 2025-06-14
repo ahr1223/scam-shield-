@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>ScamShield - Detect Scam Messages</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span>ScamShield</span>
+                <span class="shield-icon" aria-label="shield">🛡️</span>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">How it Works</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>
+            ScamShield 
+            <span class="shield-icon" aria-label="shield">🛡️</span>
+        </h1>
+        <p class="tagline">AI-powered protection from scam messages</p>
+        
+        <label for="messageInput">Paste your SMS or message below:</label>
+        <textarea id="messageInput" placeholder="e.g. 'Congratulations! You have won ₹1,00,000. Click here to claim.'"></textarea>
+        <button id="scanBtn" onclick="scanMessage()">Scan for Scam</button>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <span>&copy; 2024 ScamShield. All rights reserved.</span>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms</a>
+                <a href="#">Support</a>
+            </div>
+        </div>
+    </footer>
+        <script src="script.js"></script>
+</body>
+</html>
